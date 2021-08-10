@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>Tech Tools For COVID-19</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description"
+		content="A rapid review of the different tech tools being deployed to supplement and augment the public health response to the COVID-19 crisis in India.">
+
+	<meta name="author" content="Tandem Research">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="assets/bootstrap.bundle.min.js"></script>
+
+	<link href="assets/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light">
+		<div class="container justify-content-center">
+			<!-- <img class="navbar-brand" src="assets/Logo.svg" alt="" width="110" height="auto"> -->
+		</div>
+	</nav>
+
+	<div class="p-4 p-md-5 mb-4">
+		<div class="container ">
+			<div class="row">
+				<div class="col-md">
+					<h1 class="display-4">Type Resources</h1>
+					<div class="short-line-yellow"></div>
+				</div>
+				<div class="col-md">
+					<p>Type resources. njoy. </p>
+					<!-- <p>Please do see the <a href="https://tandemresearch.org/assets/Tech-Tools-for-Covid19-report_18.8.20.pdf" target="_blank">accompanying report</a> for more details.</p> -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		$(document).ready(function () {
+			$("#option1").click(function () {
+				sheetNum = 1;// button(toggle)
+				clearcontent();
+				attachEvents();
+			});
+		});
+
+		$(document).ready(function () {
+			$("#option2").click(function () {
+				sheetNum = 2;// button(toggle)
+				clearcontent();
+				attachEvents();
+			});
+		});
+		$(document).ready(function () {
+			$("#option3").click(function () {
+				sheetNum = 3;// button(toggle)
+				clearcontent();
+				attachEvents();
+			});
+		});
+		$(document).ready(function () {
+			$("#option4").click(function () {
+				sheetNum = 4;// button(toggle)
+				clearcontent();
+				attachEvents();
+			});
+		});
+		$(document).ready(function () {
+			$("#option5").click(function () {
+				sheetNum = 5;// button(toggle)
+				clearcontent();
+				attachEvents();
+			});
+		});
+		$(document).ready(function () {
+			$("#option6").click(function () {
+				sheetNum = 6;// button(toggle)
+				clearcontent();
+				attachEvents();
+			});
+		});
+		// $(document).ready(function(){
+		//     $("#option7").click(function(){
+		//      sheetNum = 7;// button(toggle)
+		// 		clearcontent();
+		// 		attachEvents();
+		//     });
+		// });
+
+
+		$(document).on('change', '#drop-down', function () {
+			if (this.value == 1) {
+				sheetNum = 1;
+				clearcontent();
+				attachEvents();
+			}
+			else if (this.value == 2) {
+				sheetNum = 2;
+				clearcontent();
+				attachEvents();
+			}
+			else if (this.value == 3) {
+				sheetNum = 3;
+				clearcontent();
+				attachEvents();
+			}
+			else if (this.value == 4) {
+				sheetNum = 4;
+				clearcontent();
+				attachEvents();
+			}
+			else if (this.value == 5) {
+				sheetNum = 5;
+				clearcontent();
+				attachEvents();
+			}
+			else if (this.value == 6) {
+				sheetNum = 6;
+				clearcontent();
+				attachEvents();
+			}
+			// 	else if(this.value==7) {
+			// 		sheetNum = 7;
+			// 		clearcontent();
+			// 		attachEvents();
+			// 	}
+		});
+
+
+	</script>
+	<div class="container d-none d-md-block ">
+		<label for="years1">Choose a category:</label>
+		<div class=" btn-group-toggle mb-5" data-toggle="buttons">
+			<label class="btn btn-secondary active m-1">
+				<input type="radio" name="options" id="option1" autocomplete="off" checked> Type
+			</label>
+			<label class="btn btn-secondary m-1">
+				<input type="radio" name="options" id="option2" autocomplete="off"> Coming soon
+			</label>
+			<!-- <label class="btn btn-secondary m-1">
+				<input type="radio" name="options" id="option3" autocomplete="off"> Remote Health Patient Monitoring
+			</label>
+			<label class="btn btn-secondary m-1">
+				<input type="radio" name="options" id="option4" autocomplete="off"> Virus Mapping & Contact Tracing
+			</label>
+			<label class="btn btn-secondary m-1">
+				<input type="radio" name="options" id="option5" autocomplete="off"> Information & Alerts
+			</label>
+			<label class="btn btn-secondary m-1">
+				<input type="radio" name="options" id="option6" autocomplete="off"> Location Tracking & Quarantine
+				Management
+			</label> -->
+			<!-- 				<label class="btn btn-secondary m-1">
+					<input type="radio" name="options" id="option7" autocomplete="off"> Miscellaneous
+				</label> -->
+		</div>
+	</div>
+	<div class="container d-md-none mb-5">
+		<label for="years1">Choose</label>
+
+		<select class="custom-select d-block w-100" id="drop-down" required>
+
+			<option value="1">Type</option>
+
+			<option value="2">Coming soon</option>
+
+			<!-- <option value="3">Remote Health Patient Monitoring</option>
+
+			<option value="4">Virus Mapping & Contact Tracing</option>
+
+			<option value="5">Information & Alerts</option>
+
+			<option value="6">Location Tracking & Quarantine Management</option>
+
+			<option value="7">Miscellaneous</option> -->
+
+		</select>
+	</div>
+	<div class="container">
+
+		<h2 id="sTitle">Telemedicine</h2>
+
+		<div>
+			<table class="table table-sm main-table" id="main-table">
+				<thead class="thead-dark">
+					<tr id="header" class="row"></tr>
+				</thead>
+
+				<tbody id="rBody"></tbody>
+			</table>
+		</div>
+	</div>
+
+	<script src="assets/GetSheetDone.js"></script>
+	<script>
+		const $key = document.getElementById('key'),
+			$sheetNum = document.getElementById('sheetNum'),
+			$form = document.getElementById('theForm'),
+			$output = document.getElementById('output');
+		var header = document.getElementById('header');
+		var rBody = document.getElementById('rBody');
+		$but1 = document.getElementById('option1');
+		$sTitle = document.getElementById('sTitle');
+		let key, sheetNum, sheetType;
+		sheetNum = 1;
+		attachEvents();
+
+		// https://docs.google.com/spreadsheets/d/e/2PACX-1vRGDG8Ao-1bpvflgkytzlS4K5VQ7tFvi_1NUaVkSeEWAaElfyfEiuWvQxPVEs11fZeaT9mMiTnW66q5/pubhtml 
+		// https://docs.google.com/spreadsheets/d/1koc8s4TIDQpAO3sEpg11nIgx8auMlv-fFQAi6cPqils/edit#gid=0
+
+
+		function readValues() {
+			key = "1koc8s4TIDQpAO3sEpg11nIgx8auMlv-fFQAi6cPqils"; //contact us at hello@tandemresearch.org for the data set!
+			sheetNum = sheetNum;
+			sheetType = "raw";
+		}
+
+		function clearcontent() {
+			document.getElementById("header").innerHTML = "";
+			document.getElementById("rBody").innerHTML = "";
+		}
+
+
+		function attachEvents() {
+			readValues();
+			let promise;
+			switch (sheetType) {
+				case 'cols':
+					promise = GetSheetDone.labeledCols(key, sheetNum);
+					break;
+				case 'cols-rows':
+					promise = GetSheetDone.labeledColsRows(key, sheetNum);
+					break;
+				case 'raw':
+				default:
+					promise = GetSheetDone.raw(key, sheetNum);
+					break;
+			}
+
+			promise.then((data) => {
+				$sTitle.innerHTML = data.title;
+				for (var i = 0; i < data.data[0].length; i++) {
+					var headerCell = document.createElement("th");
+					headerCell.classList.add("col");
+					headerCell.innerHTML = data.data[0][i];
+					header.appendChild(headerCell);
+				}
+				for (var i = 1; i < data.data.length; i++) {
+					var cRow = document.createElement("tr");
+					cRow.classList.add("row");
+					if (data.data[i].length == 1) {
+						cRow.classList.add("subhead");
+					}
+					for (var j = 0; j < data.data[i].length; j++) {
+						var bodyCell = document.createElement("td");
+						bodyCell.classList.add("col");
+						if (data.data[i][j] != undefined) {
+							bodyCell.innerHTML = data.data[i][j];
+						}
+						else {
+							bodyCell.innerHTML = "";
+						}
+						cRow.appendChild(bodyCell);
+					}
+					rBody.appendChild(cRow);
+				}
+			}).catch(err => {
+				$output.innerHTML = err.message;
+			})
+		}
+	</script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+
+	<div class="container">
+		<footer class="pt-4 my-md-5 pt-md-5 border-top">
+			<!-- <div class="row">
+				<div class="col-12 col-md">
+					<a class="text-muted" target="_blank" href="https://tandemresearch.org/"><img class="mb-2"
+							src="assets/Logo.svg" alt="" width="150" height="auto"></a>
+					<small class="d-block mb-3 text-muted">Tandem Research &copy; 2020</small>
+				</div>
+
+
+				<div class="col-9 col-md">
+					<h5>Links</h5>
+
+					<ul class="list-unstyled text-small footer-body">
+						<li><a class="text-muted" target="_blank" href="https://tandemresearch.org/">Homepage</a></li>
+						<li><a class="text-muted" target="_blank" href="https://twitter.com/tandem_research">Twitter</a>
+						</li>
+						<li><a class="text-muted" target="_blank"
+								href="mailto:hello@tandemresearch.org">hello@tandemresearch.org</a></li>
+					</ul>
+				</div>
+
+				<div class="col-9 col-md">
+					<h5>About</h5>
+
+					<p class="text-muted footer-body">Tandem Research is an interdisciplinary research collective that
+						generates policy insights at the interface of technology, society, and sustainability. Our work
+						seeks to ensure that no one gets left behind in the technology transitions that will shape
+						India’s future.</p>
+				</div>
+			</div> -->
+		</footer>
+	</div>
+</body>
+
+</html>
