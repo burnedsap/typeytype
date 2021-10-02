@@ -8,8 +8,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta name="description"
-		content="Resources to save a life.">
+	<meta name="description" content="Resources to save a life.">
 
 	<meta name="author" content="salil">
 
@@ -19,6 +18,7 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
 		crossorigin="anonymous"></script>
+	<script type='text/javascript' src='config.js'></script>
 	<script src="assets/bootstrap.bundle.min.js"></script>
 
 	<link href="assets/style.css" rel="stylesheet">
@@ -48,6 +48,7 @@
 	</div>
 
 	<script>
+		var mykey = config.API_KEY;
 		$(document).ready(function () {
 			$("#option1").click(function () {
 				sheetNum = 1;// button(toggle)
@@ -222,7 +223,7 @@
 
 
 		function readValues() {
-			key = "1koc8s4TIDQpAO3sEpg11nIgx8auMlv-fFQAi6cPqils"; //contact us at hello@tandemresearch.org for the data set!
+			key = "1koc8s4TIDQpAO3sEpg11nIgx8auMlv-fFQAi6cPqils";
 			sheetNum = sheetNum;
 			sheetType = "raw";
 		}
@@ -287,35 +288,6 @@
 
 	<div class="container">
 		<footer class="pt-4 my-md-5 pt-md-5 border-top">
-			<!-- <div class="row">
-				<div class="col-12 col-md">
-					<a class="text-muted" target="_blank" href="https://tandemresearch.org/"><img class="mb-2"
-							src="assets/Logo.svg" alt="" width="150" height="auto"></a>
-					<small class="d-block mb-3 text-muted">Tandem Research &copy; 2020</small>
-				</div>
-
-
-				<div class="col-9 col-md">
-					<h5>Links</h5>
-
-					<ul class="list-unstyled text-small footer-body">
-						<li><a class="text-muted" target="_blank" href="https://tandemresearch.org/">Homepage</a></li>
-						<li><a class="text-muted" target="_blank" href="https://twitter.com/tandem_research">Twitter</a>
-						</li>
-						<li><a class="text-muted" target="_blank"
-								href="mailto:hello@tandemresearch.org">hello@tandemresearch.org</a></li>
-					</ul>
-				</div>
-
-				<div class="col-9 col-md">
-					<h5>About</h5>
-
-					<p class="text-muted footer-body">Tandem Research is an interdisciplinary research collective that
-						generates policy insights at the interface of technology, society, and sustainability. Our work
-						seeks to ensure that no one gets left behind in the technology transitions that will shape
-						India’s future.</p>
-				</div>
-			</div> -->
 		</footer>
 	</div>
 </body>
